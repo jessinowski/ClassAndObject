@@ -11,8 +11,8 @@ public class Person {
         this.age = age;
     }
 
-    public static void introduction(Person person){
-        System.out.println("Hello, I am "+ person.name+" and "+person.age+" years old.");
+    public static void introduction(){
+        System.out.println("Hello, I am "+ name+" and "+age+" years old.");
     }
 
 }

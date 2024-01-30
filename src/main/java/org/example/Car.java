@@ -1,12 +1,12 @@
 package org.example;
 
 public class Car {
-    String brand;
-    String model;
-    String color;
-    int yearOfManufacture;
-    boolean isStarted = true;
-    int speed = 0;
+    static String brand;
+    static String model;
+    static String color;
+    static int yearOfManufacture;
+    static boolean isStarted = true;
+    static int speed = 0;
 
     public Car(){}
     public Car(String brand, String model, String color, int yearOfManufacture){
@@ -18,15 +18,15 @@ public class Car {
     public Car(String brand){
         this.brand = brand;
     }
-    public static void startCar(Car car){
-        if(car.isStarted == false){
-            car.isStarted = true;
+    public static void startCar(){
+        if(isStarted == false){
+            isStarted = true;
         }
-        System.out.println(car.brand+" started.");
+        System.out.println(brand+" started.");
     }
 
-    public static int accelerate(Car car, int acceleration){
-        car.speed = acceleration;
+    public static int accelerate(int acceleration){
+        speed = acceleration;
         return acceleration;
     }
 }
